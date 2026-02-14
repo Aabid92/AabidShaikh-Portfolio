@@ -68,7 +68,8 @@
 
 
   <!-- ===== PROJECTS SECTION ===== -->
-<section id="projects" class="projects" id="projects">
+<section id="projects" class="projects">
+
 
   <h2 class="projects-title">
     My <span>Projects</span>
@@ -98,7 +99,7 @@
          data-tech="Photoshop, Illustrator"
          data-image="project1.jpg">
 
-      <img src="project1.jpg" alt="Graphics Project">
+      <img src="images/pro-2.png" alt="Graphics Project">
       <span>Project Name</span>
 
     </div>
@@ -112,7 +113,7 @@
          data-tech="Premiere Pro, After Effects"
          data-image="project2.jpg">
 
-      <img src="project2.jpg" alt="Video Project">
+      <img src="images/pro-2.png" alt="Video Project">
       <span>Project Name</span>
 
     </div>
@@ -154,7 +155,7 @@
          data-tech="Photoshop"
          data-image="project5.jpg">
 
-      <img src="project5.jpg" alt="Graphics Project">
+      <img src="images/pro-2.png" alt="Graphics Project">
       <span>Project Name</span>
 
     </div>
@@ -176,13 +177,14 @@
 
 </div>
 
+
 </section>
 
 <div class="section-divider diagonal1"></div>
 
 
 <!-- ===== GRAPHICS PORTFOLIO ===== -->
-<section id="graphics" class="graphics-portfolio" id="graphics">
+<section id="graphics" class="graphics-portfolio">
 
   <h2 class="graphics-title">
     Graphics <span>Portfolio</span>
@@ -192,54 +194,91 @@
     Selected graphic design works & visual creatives
   </p>
 
-  <div class="graphics-grid">
+  <!-- USE SAME GRID SYSTEM -->
+  <div class="projects-grid">
 
-  <div class="graphic-card">
-    <img src="graphic1.jpg" alt="Graphic work 1">
+    <!-- GRAPHIC 1 -->
+    <div class="project-card graphics">
+      <div class="project-box">
+        <img src="images/pro-2.png" alt="Graphic work 1">
+        <span>Poster Design</span>
+      </div>
+    </div>
+
+    <!-- GRAPHIC 2 -->
+    <div class="project-card graphics">
+      <div class="project-box">
+        <img src="images/pro-2.png" alt="Graphic work 2">
+        <span>Social Media Creative</span>
+      </div>
+    </div>
+
+    <!-- GRAPHIC 3 -->
+    <div class="project-card graphics">
+      <div class="project-box">
+        <img src="images/pro-2.png" alt="Graphic work 3">
+        <span>Brand Banner</span>
+      </div>
+    </div>
+
+    <!-- GRAPHIC 4 -->
+    <div class="project-card graphics">
+      <div class="project-box">
+        <img src="images/pro-2.png" alt="Graphic work 4">
+        <span>Event Poster</span>
+      </div>
+    </div>
+
+    <!-- GRAPHIC 5 -->
+    <div class="project-card graphics">
+      <div class="project-box">
+        <img src="images/pro-2.png" alt="Graphic work 5">
+        <span>Instagram Campaign</span>
+      </div>
+    </div>
+
+    <!-- GRAPHIC 6 -->
+    <div class="project-card graphics">
+      <div class="project-box">
+        <img src="images/pro-2.png" alt="Graphic work 6">
+        <span>Website Banner</span>
+      </div>
+    </div>
+
+    <!-- GRAPHIC 7 -->
+    <div class="project-card graphics">
+      <div class="project-box">
+        <img src="images/pro-2.png" alt="Graphic work 7">
+        <span>Ad Creative</span>
+      </div>
+    </div>
+
+    <!-- GRAPHIC 8 -->
+    <div class="project-card graphics">
+      <div class="project-box">
+        <img src="images/pro-2.png" alt="Graphic work 8">
+        <span>Thumbnail Design</span>
+      </div>
+    </div>
+
+    <!-- GRAPHIC 9 -->
+    <div class="project-card graphics">
+      <div class="project-box">
+        <img src="images/pro-2.png" alt="Graphic work 9">
+        <span>Brand Identity Visual</span>
+      </div>
+    </div>
+
   </div>
-
-  <div class="graphic-card highlight">
-    <img src="graphic2.jpg" alt="Graphic work 2">
-  </div>
-
-  <div class="graphic-card">
-    <img src="graphic3.jpg" alt="Graphic work 3">
-  </div>
-
-  <div class="graphic-card">
-    <img src="graphic4.jpg" alt="Graphic work 4">
-  </div>
-
-  <div class="graphic-card highlight">
-    <img src="graphic5.jpg" alt="Graphic work 5">
-  </div>
-
-  <div class="graphic-card">
-    <img src="graphic6.jpg" alt="Graphic work 6">
-  </div>
-
-  <div class="graphic-card">
-    <img src="graphic7.jpg" alt="Graphic work 7">
-  </div>
-
-  <div class="graphic-card highlight">
-    <img src="graphic8.jpg" alt="Graphic work 8">
-  </div>
-
-  <div class="graphic-card">
-    <img src="graphic9.jpg" alt="Graphic work 9">
-  </div>
-
-</div>
-
 
 </section>
+
 
 <div class="section-divider diagonal"></div>
 
 
 <!-- ===== SERVICES SECTION ===== -->
-<section id="services" class="services" id="services">
+<section id="services" class="services">
 
   <h2 class="services-title">
     What <span>I Do</span>
@@ -283,7 +322,7 @@
 
 
 <!-- ===== ABOUT ME SECTION ===== -->
-<section id="about" class="about" id="about">
+<section id="about" class="about">
 
   <div class="about-container">
 
@@ -499,6 +538,12 @@
         z-index:99999;">
 ↑
 </button>
+
+<!-- IMAGE LIGHTBOX -->
+<div class="image-lightbox" id="imageLightbox">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightboxImage" src="images/pro-1.png" alt="Preview">
+</div>
 
 
   <script src="script.js" defer></script>

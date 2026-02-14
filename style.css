@@ -836,9 +836,15 @@ nav ul li.active::after {
 
 @media (max-width: 600px) {
   section {
-    padding: 70px 16px !important;
+    padding: 25px 16px !important;
+  }
+
+  .section-subtitle {
+    margin-bottom: 30px;
   }
 }
+
+
 
 @media (max-width: 600px) {
   h1 { font-size: 32px; }
@@ -1011,13 +1017,52 @@ body {
 
   z-index: 2;   /* 🔥 VERY IMPORTANT */
 }
-
-
-
-section {
-  border: 2px solid red;
+section h1,
+section h2,
+section h3 {
+  margin-top: 0;
 }
 
+@media (max-width: 600px) {
+  .hero-divider svg {
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: 40px 16px 60px;
+    text-align: center;
+  }
+}
+
+/* ===== IMAGE LIGHTBOX ===== */
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.9);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+}
+
+.image-lightbox img {
+  max-width: 90%;
+  max-height: 85%;
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
 
 
 

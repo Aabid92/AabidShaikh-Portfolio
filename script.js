@@ -41,29 +41,6 @@ filterButtons.forEach(btn => {
   });
 });
 
-// ===== GRAPHICS LIGHTBOX =====
-const graphics = document.querySelectorAll(".graphic-item img");
-const lightbox = document.getElementById("lightbox");
-const lightboxImg = document.getElementById("lightbox-img");
-const closeBtn = document.querySelector(".lightbox-close");
-
-graphics.forEach(img => {
-  img.addEventListener("click", () => {
-    lightboxImg.src = img.src;
-    lightbox.style.display = "flex";
-  });
-});
-
-closeBtn.addEventListener("click", () => {
-  lightbox.style.display = "none";
-});
-
-lightbox.addEventListener("click", (e) => {
-  if (e.target === lightbox) {
-    lightbox.style.display = "none";
-  }
-});
-
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("#nav-menu ul li a");
 
@@ -91,7 +68,45 @@ navLinks.forEach(link => {
   });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
 
+  const lightbox = document.getElementById("imageLightbox");
+  const lightboxImg = document.getElementById("lightboxImage");
+  const closeBtn = document.querySelector(".lightbox-close");
+
+  if (!lightbox || !lightboxImg || !closeBtn) {
+    console.log("Lightbox elements not found");
+    return;
+  }
+
+  document.querySelectorAll(".project-box img").forEach(img => {
+    img.addEventListener("click", function () {
+      lightbox.style.display = "flex";
+      lightboxImg.src = this.src;
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    lightbox.style.display = "none";
+  });
+
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) {
+      lightbox.style.display = "none";
+    }
+  });
+
+  let scale = 1;
+
+lightboxImg.addEventListener("wheel", (e) => {
+  e.preventDefault();
+  scale += e.deltaY * -0.001;
+  scale = Math.min(Math.max(1, scale), 3);
+  lightboxImg.style.transform = `scale(${scale})`;
+});
+
+
+});
 
 
 
