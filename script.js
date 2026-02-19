@@ -108,5 +108,22 @@ lightboxImg.addEventListener("wheel", (e) => {
 
 });
 
+// ===== GRAPHICS MASONRY =====
+const graphicsGrid = document.querySelector(".graphics-portfolio .projects-grid");
+
+if (graphicsGrid) {
+  const msnry = new Masonry(graphicsGrid, {
+    itemSelector: ".project-card",
+    percentPosition: true,
+    gutter: 20
+  });
+
+  // relayout after images load
+  imagesLoaded(graphicsGrid, function () {
+    msnry.layout();
+  });
+}
+
+
 
 

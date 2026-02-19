@@ -1064,25 +1064,34 @@ section h3 {
   cursor: pointer;
 }
 
-/* ===== GRAPHICS MASONRY ===== */
+/* ===== GRAPHICS MASONRY FIX ===== */
+
 .graphics-portfolio .projects-grid {
-  column-count: 3;
-  column-gap: 20px;
+  display: block; /* Masonry controls layout */
 }
 
 .graphics-portfolio .project-card {
-  break-inside: avoid;
+  width: 32%;
   margin-bottom: 20px;
 }
 
+/* responsive */
 @media (max-width: 900px) {
-  .graphics-portfolio .projects-grid {
-    column-count: 2;
+  .graphics-portfolio .project-card {
+    width: 48%;
   }
 }
 
 @media (max-width: 500px) {
-  .graphics-portfolio .projects-grid {
-    column-count: 1;
+  .graphics-portfolio .project-card {
+    width: 100%;
   }
 }
+
+/* image natural ratio */
+.project-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
