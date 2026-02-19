@@ -196,17 +196,17 @@ nav ul li.active::after {
 /* ===== PROJECTS SECTION ===== */
 .projects {
   padding: 80px 20px;
-  background: #5a97bf;
+  background: #ffffff;
   text-align: center;
 }
 
 .projects-title {
   font-size: 48px;
-  color: #fff;
+  color: #000000;
 }
 
 .projects-title span {
-  color: #ffee00;
+  color: #ff8a00;
 }
 
 .projects-subtitle {
@@ -347,7 +347,7 @@ nav ul li.active::after {
 /* ===== GRAPHICS PORTFOLIO ===== */
 .graphics-portfolio {
   padding: 100px 20px;
-  background: #ffffff;
+  background: #5a97bf;
   text-align: center;
 }
 
@@ -357,7 +357,7 @@ nav ul li.active::after {
 }
 
 .graphics-title span {
-  color: #ff9f0a;
+  color: #ffffff;
 }
 
 .graphics-subtitle {
