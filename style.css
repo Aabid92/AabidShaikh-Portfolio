@@ -253,7 +253,7 @@ nav ul li.active::after {
 }
 
 .project-box {
-  height: 220px;
+  /* height: 220px; */
   border: 6px solid #ffee00;
   border-radius: 18px;
   display: flex;
@@ -273,12 +273,11 @@ nav ul li.active::after {
 
 .project-box img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  inset: 0;
-  z-index: 0;
+  height: auto;     /* 🔥 IMPORTANT */
+  display: block;
+  object-fit: contain; /* or remove object-fit */
 }
+
 
 .project-box span {
   position: relative;
@@ -1065,3 +1064,25 @@ section h3 {
   cursor: pointer;
 }
 
+/* ===== GRAPHICS MASONRY ===== */
+.graphics-portfolio .projects-grid {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+.graphics-portfolio .project-card {
+  break-inside: avoid;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  .graphics-portfolio .projects-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 500px) {
+  .graphics-portfolio .projects-grid {
+    column-count: 1;
+  }
+}
