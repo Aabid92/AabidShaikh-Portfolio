@@ -1095,3 +1095,22 @@ section h3 {
   display: block;
 }
 
+
+.footer-social a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.footer-social a:hover {
+  transform: translateX(5px);
+  color: #ffee00;
+}
+
+.footer-social i {
+  font-size: 18px;
+}
