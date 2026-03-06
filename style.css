@@ -643,6 +643,17 @@ nav ul li.active::after {
   width: 100%;
 }
 
+.footer-social a {
+  font-size: 20px;
+  margin: 0 10px;
+  color: #fff;
+  transition: transform 0.25s ease;
+}
+
+.footer-social a:hover {
+  transform: translateY(-3px);
+}
+
 /* MOBILE */
 @media (max-width: 900px) {
   .social-links {
