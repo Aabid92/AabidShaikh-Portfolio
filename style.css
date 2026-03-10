@@ -363,6 +363,7 @@ nav ul li.active::after {
 .graphics-title {
   font-size: 52px;
   font-weight: 800;
+  color: yellow;
 }
 
 .graphics-title span {
@@ -373,6 +374,7 @@ nav ul li.active::after {
   font-size: 22px;
   margin: 16px 0 70px;
   font-weight: 600;
+  color: rgb(216, 216, 216);
 }
 
 /* GRID */
@@ -446,6 +448,7 @@ nav ul li.active::after {
 .services-title {
   font-size: 48px;
   font-weight: 800;
+  color: white;
 }
 
 .services-title span {
@@ -455,7 +458,7 @@ nav ul li.active::after {
 .services-subtitle {
   font-size: 20px;
   margin: 14px 0 60px;
-  color: #555;
+  color: #d8d8d8;
 }
 
 /* GRID */
@@ -696,7 +699,7 @@ nav ul li.active::after {
 .testimonials-subtitle {
   margin: 14px 0 60px;
   font-size: 20px;
-  color: #000;
+  color: #d2d2d2;
 }
 
 /* GRID */
